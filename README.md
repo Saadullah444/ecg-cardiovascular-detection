@@ -77,9 +77,7 @@ torch
 transformers<4.40
 ```
 
-> **Note on `transformers`:** the notebook imports `AdamW` from `transformers`, which was removed in version 4.40. Either pin an earlier release as above, or swap the import for `from torch.optim import AdamW`, which is a drop in replacement.
-
-A GPU is optional. The notebook falls back to CPU automatically. All results in the paper were produced on a 2.50 GHz 12th Gen Intel Core i9-12900H, with additional runs on the University of Birmingham BlueBEAR HPC facility.
+> **Note on `transformers`:** the notebook imports `AdamW` from `transformers`, which was removed in version 4.40. Either pin an earlier release as above, or swap the import for `from torch.optim import AdamW`, which is a drop in replacement. A GPU is optional. The notebook falls back to CPU automatically. 
 
 ## Running the pipeline
 
