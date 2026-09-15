@@ -100,14 +100,6 @@ Execute the cells in order. The stages are:
 6. **Tokenise and fine tune.** `bert-base-uncased` with a four label classification head, AdamW optimiser, 5 epochs, batch size 2, maximum sequence length 128. Weights are written to `./my_ecg_filtered_classifier/`.
 7. **Evaluate.** Reloads the saved model and produces accuracy, a full classification report, a confusion matrix, per class ROC curves and per class precision recall curves.
 
-Hyperparameters as reported in the paper:
-
-| Optimiser | Learning rate | Epochs | Batch size | Sequence length |
-|-----------|---------------|--------|------------|-----------------|
-| AdamW | 5e-5 | 5 | 2 | 128 tokens |
-
-The notebook as committed sets the learning rate to `2e-5`. Adjust the value in the training cell if you want to reproduce the published configuration exactly.
-
 ## Results
 
 Per class performance on the held out test set:
@@ -121,16 +113,6 @@ Per class performance on the held out test set:
 | F1 score | 0.9920 | 1.0000 | 0.9916 | 1.0000 |
 
 **Overall test accuracy: 99.79%**
-
-Inference cost: 0.0228 s per sample at batch size 1, rising to 0.4253 s at batch size 64. Model memory footprint is roughly 2.656 GB.
-
-Ablations reported in the paper: removing random forest feature selection and training on all 56 features drops accuracy by 2.3%, and replacing the transformer with a CNN drops it by 6.28%. Paired t-tests against CNN and MLP baselines give p = 0.0125 and p = 0.0138 respectively.
-
-## Known limitations
-
-- The dataset contains no healthy control class, so the model cannot separate cardiovascular disease from normal physiology outside these four categories. Applying it to a population including healthy subjects risks false positives.
-- Features are hand crafted and require domain knowledge plus a separate extraction step. Integrating a 1D CNN front end for automatic feature learning is the natural extension.
-- Reported accuracy comes from a single 80/20 split. Cross validation would give a tighter estimate of variance.
 
 ## Citation
 
