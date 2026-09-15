@@ -146,3 +146,5 @@ The paper is distributed under the [Creative Commons Attribution License (CC BY 
 **Dr. Saadullah Farooq Abbasi**
 Department of Electronic, Electrical and Systems Engineering, University of Birmingham
 s.f.abbasi@bham.ac.uk
+
+The code in this repository is released under the MIT License (see `LICENSE`).
