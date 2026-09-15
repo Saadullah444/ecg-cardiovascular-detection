@@ -23,7 +23,7 @@ The method works in three stages:
 2. **Tokenisation.** Each retained feature vector is serialised into a text string of the form `QRtoQSdur: 0.001, RStoQSdur: 0.001, RRmean: 29...` and tokenised with the BERT WordPiece tokeniser (128 token sequences).
 3. **Classification.** A transformer encoder with a sequence classification head is fine tuned on these tokenised feature strings for four way prediction.
 
-Overall test accuracy is 99.58% (239/240), with a mean per class accuracy of 99.79%.
+Overall test accuracy is 99.58%, with a mean per class accuracy of 99.79%.
 
 ## Repository structure
 
