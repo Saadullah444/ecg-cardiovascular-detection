@@ -1,6 +1,6 @@
 # A Novel Transformer-Based Approach for Cardiovascular Disease Detection
 
-Code accompanying the paper published in *Frontiers in Digital Health* (2025).
+This Code is for the paper published in *Frontiers in Digital Health* (2025).
 
 > Noor N, Bilal M, Abbasi SF, Pournik O, Arvanitis TN. **A novel transformer-based approach for cardiovascular disease detection.** *Front. Digit. Health* 7:1548448. doi: [10.3389/fdgth.2025.1548448](https://doi.org/10.3389/fdgth.2025.1548448)
 
