@@ -23,7 +23,7 @@ The method works in three stages:
 2. **Tokenisation.** Each retained feature vector is serialised into a text string of the form `QRtoQSdur: 0.001, RStoQSdur: 0.001, RRmean: 29...` and tokenised with the BERT WordPiece tokeniser (128 token sequences).
 3. **Classification.** A transformer encoder with a sequence classification head is fine tuned on these tokenised feature strings for four way prediction.
 
-Reported test accuracy is **99.79%**, with an AUC of 1.00 for three of the four classes.
+Overall test accuracy is 99.58% (239/240), with a mean per class accuracy of 99.79%.
 
 ## Repository structure
 
@@ -82,8 +82,8 @@ transformers<4.40
 ## Running the pipeline
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Saadullah444/ecg-cardiovascular-detection.git
+cd ecg-cardiovascular-detection
 pip install -r requirements.txt
 jupyter notebook MainCodeforpaper.ipynb
 ```
