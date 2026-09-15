@@ -159,7 +159,7 @@ The authors acknowledge the University of Birmingham's BlueBEAR HPC service for 
 
 ## Licence
 
-The paper is distributed under the [Creative Commons Attribution License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Add a `LICENSE` file to this repository to state the terms for the code itself. MIT is a common choice for research code.
+The paper is distributed under the [Creative Commons Attribution License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
 
 ## Contact
 
