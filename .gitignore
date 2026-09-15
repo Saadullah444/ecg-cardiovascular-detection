@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / logs
+.env
+.env.*
+*.log
+
+# Model outputs
+my_ecg_filtered_classifier/
+
+# Data files
+ECGCvdata.csv
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db
