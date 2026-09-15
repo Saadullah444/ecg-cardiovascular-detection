@@ -110,7 +110,7 @@ Per class performance on the held out test set:
 | Precision | 0.9836 | 1.0000 | 1.0000 | 1.0000 |
 | F1 score | 0.9920 | 1.0000 | 0.9916 | 1.0000 |
 
-**Overall test accuracy: 99.79%**
+**Mean Per Class Accuracy: 99.79%**
 
 ## Citation
 
