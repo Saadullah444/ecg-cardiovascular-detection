@@ -125,10 +125,6 @@ This work was partially funded by:
 - **MedSecurance** (Advanced Security-for-safety Assurance for Medical Device IoT), Grant Agreement 101095448
 - **INSAFEDARE** (Innovative Applications of Assessment and Assurance of Data and Synthetic Data for Regulatory Decision Support), Grant Agreement 101095661
 
-## Licence
-
-The paper is distributed under the [Creative Commons Attribution License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
-
 ## Contact
 
 **Dr. Saadullah Farooq Abbasi**
