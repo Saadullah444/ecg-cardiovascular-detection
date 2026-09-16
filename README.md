@@ -88,16 +88,6 @@ pip install -r requirements.txt
 jupyter notebook MainCodeforpaper.ipynb
 ```
 
-Execute the cells in order. The stages are:
-
-1. **Load and inspect.** Reads `ECGCvdata.csv`, prints summary statistics, plots a correlation heatmap over the 54 features and per class box plots.
-2. **Impute missing values.** Nine columns (`QRtoQSdur`, `RStoQSdur`, `PonPQang`, `PQRang`, `QRSang`, `RSTang`, `STToffang`, `QRslope`, `RSslope`) contain gaps. These are filled with the class wise median.
-3. **Rank features.** A `RandomForestClassifier` (100 trees) gives overall importances, then a `OneVsRestClassifier` wrapper gives per class importances. PCA is used here only for a 2D visual check of class separability.
-4. **Select features.** Any feature whose maximum importance across the four classes exceeds 0.02 is kept. Values are rounded to three decimal places.
-5. **Serialise to text.** Each row becomes a `name: value` string, labels are integer encoded, and the data is split 80/20 into train and test.
-6. **Tokenise and fine tune.** `bert-base-uncased` with a four label classification head, AdamW optimiser, 5 epochs, batch size 2, maximum sequence length 128. Weights are written to `./my_ecg_filtered_classifier/`.
-7. **Evaluate.** Reloads the saved model and produces accuracy, a full classification report, a confusion matrix, per class ROC curves and per class precision recall curves.
-
 ## Results
 
 Per class performance on the held out test set:
